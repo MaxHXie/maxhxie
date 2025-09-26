@@ -1,4 +1,5 @@
 import { posts } from "../posts";
+import Link from "next/link";
 
 export function generateStaticParams() {
   return Object.keys(posts).map((slug) => ({ slug }));
@@ -19,7 +20,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       >
         <h1>Post not found</h1>
         <p>
-          <a href="/blog">Back to blog</a>
+          <Link href="/blog">Back to blog</Link>
         </p>
       </main>
     );
@@ -40,7 +41,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <p key={index}>{paragraph}</p>
       ))}
       <p>
-        <a href="/blog">Back to blog</a>
+        <Link href="/blog">Back to blog</Link>
       </p>
     </main>
   );

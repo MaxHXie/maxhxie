@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
     >
       <img src="/profile.jpeg" alt="Max Henry Xie" width={200} height={200} />
       <nav>
-        <a href="/blog">Blog articles</a>
+        <Link href="/blog">Blog articles</Link>
       </nav>
       <section aria-label="About and work">
         My name is Max Henry Xie. And this is my website.

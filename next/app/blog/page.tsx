@@ -1,4 +1,5 @@
 import { getPostLinks } from "./posts";
+import Link from "next/link";
 
 export default function BlogIndex() {
   const postLinks = getPostLinks();
@@ -15,9 +16,9 @@ export default function BlogIndex() {
       <ul style={{ listStyle: "none", padding: 0 }}>
         {postLinks.map((post) => (
           <li key={post.slug}>
-            <a href={`/blog/${post.slug}`}>
+            <Link href={`/blog/${post.slug}`}>
               {post.title} ({post.date})
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
