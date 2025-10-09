@@ -1,19 +1,59 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+
+type Message = {
+  role: "user" | "assistant";
+  content: string;
+};
 
 export default function Home() {
   const [question, setQuestion] = useState("");
-  const [answer, setAnswer] = useState("");
+  const [conversationHistory, setConversationHistory] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const previousHistoryLength = useRef(0);
+
+  // Load conversation history from localStorage on mount
+  useEffect(() => {
+    const savedHistory = localStorage.getItem("conversationHistory");
+    if (savedHistory) {
+      try {
+        const parsed = JSON.parse(savedHistory);
+        setConversationHistory(parsed);
+        // Set the initial length so loaded messages don't animate
+        previousHistoryLength.current = parsed.length;
+      } catch (error) {
+        console.error("Error loading conversation history:", error);
+      }
+    }
+  }, []);
+
+  // Save conversation history to localStorage whenever it changes
+  useEffect(() => {
+    if (conversationHistory.length > 0) {
+      localStorage.setItem(
+        "conversationHistory",
+        JSON.stringify(conversationHistory)
+      );
+    }
+    // Update the previous history length after a short delay to allow animation to play
+    const timer = setTimeout(() => {
+      previousHistoryLength.current = conversationHistory.length;
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [conversationHistory]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!question.trim()) return;
 
     setIsLoading(true);
-    setAnswer("");
+
+    // Add the new user question to the conversation history
+    const newUserMessage: Message = { role: "user", content: question };
+    const updatedHistory = [...conversationHistory, newUserMessage];
+    setConversationHistory(updatedHistory);
 
     try {
       const response = await fetch("/api/ask", {
@@ -21,17 +61,33 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ question }),
+        body: JSON.stringify({ messages: updatedHistory }),
       });
 
       const data = await response.json();
-      setAnswer(data.answer);
+
+      // Add the assistant's answer to the conversation history
+      const newAssistantMessage: Message = {
+        role: "assistant",
+        content: data.answer,
+      };
+      setConversationHistory([...updatedHistory, newAssistantMessage]);
       setQuestion("");
     } catch (error) {
-      setAnswer("Sorry, something went wrong. Please try again.");
+      const errorMessage: Message = {
+        role: "assistant",
+        content: "Sorry, something went wrong. Please try again.",
+      };
+      setConversationHistory([...updatedHistory, errorMessage]);
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const clearHistory = () => {
+    setConversationHistory([]);
+    localStorage.removeItem("conversationHistory");
+    previousHistoryLength.current = 0;
   };
 
   return (
@@ -52,73 +108,123 @@ export default function Home() {
 
       <section style={{ textAlign: "left" }}>
         <p style={{ marginBottom: 24 }}>
-          You can chat with my digital clone, ask me anything and my digital
-          clone will try to respond as if we were chatting in person. Your
-          questions are anonymous, I won&apos;t be able to know, in any way, who
-          asked them. Disclaimer: all replies are written automatically by my
-          digital clone, not me. There may be deviations from my actual
+          You can chat with my digital clone here, ask me anything and my
+          digital clone will try to respond as if we were chatting in person.
+          Your questions are anonymous, I won&apos;t be able to know, in any
+          way, who asked them. Disclaimer: all replies are written automatically
+          by my digital clone, not me. There may be deviations from my actual
           personality.
         </p>
 
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            placeholder="Ask anything about me"
+        {conversationHistory.length > 0 && (
+          <button
+            onClick={clearHistory}
             disabled={isLoading}
             style={{
-              width: "100%",
-              padding: 16,
-              fontSize: 16,
-              marginBottom: 16,
-              outline: "none",
-            }}
-          />
-        </form>
-
-        {isLoading && (
-          <div
-            style={{
-              padding: 24,
-              backgroundColor: "#f5f5f5",
-              borderRadius: 8,
-              textAlign: "center",
-              width: "100%",
+              padding: "8px 16px",
+              fontSize: 14,
+              cursor: isLoading ? "not-allowed" : "pointer",
+              backgroundColor: "#f44336",
+              color: "white",
+              border: "none",
+              opacity: isLoading ? 0.6 : 1,
+              marginBottom: 8,
             }}
           >
-            <div
+            Clear conversation history
+          </button>
+        )}
+        <form onSubmit={handleSubmit} style={{ margin: 0 }}>
+          <div
+            style={{ position: "relative", marginBottom: 12, width: "100%" }}
+          >
+            <input
+              type="text"
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+              placeholder={isLoading ? "Thinking..." : "Ask anything about me"}
+              disabled={isLoading}
               style={{
-                width: 40,
-                height: 40,
-                border: "4px solid #ddd",
-                borderTopColor: "#000000",
-                borderRadius: "50%",
-                margin: "0 auto",
-                animation: "spin 1s linear infinite",
+                width: "100%",
+                padding: 16,
+                paddingRight: isLoading ? 48 : 16,
+                fontSize: 16,
+                outline: "none",
+                opacity: isLoading ? 0.6 : 1,
+                cursor: isLoading ? "not-allowed" : "text",
+                transition: "opacity 0.3s ease, padding-right 0.3s ease",
+                boxSizing: "border-box",
+                border: "1px solid #ddd",
               }}
             />
+            {isLoading && (
+              <div
+                style={{
+                  position: "absolute",
+                  right: 16,
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  width: 16,
+                  height: 16,
+                  border: "2px solid #ddd",
+                  borderTopColor: "#000000",
+                  borderRadius: "50%",
+                  animation: "spin 1s linear infinite",
+                }}
+              />
+            )}
             <style jsx>{`
               @keyframes spin {
                 to {
-                  transform: rotate(360deg);
+                  transform: translateY(-50%) rotate(360deg);
                 }
               }
             `}</style>
           </div>
-        )}
+        </form>
+        {/* Display conversation history */}
+        {conversationHistory.length > 0 && (
+          <div style={{ marginBottom: 24 }}>
+            {[...conversationHistory].reverse().map((message, index) => {
+              const originalIndex = conversationHistory.length - 1 - index;
+              const isNewMessage =
+                originalIndex >= previousHistoryLength.current;
 
-        {answer && !isLoading && (
-          <div
-            style={{
-              padding: 24,
-              backgroundColor: "#f5f5f5",
-              borderRadius: 8,
-              lineHeight: 1.6,
-              width: "100%",
-            }}
-          >
-            <p style={{ whiteSpace: "pre-wrap" }}>{answer}</p>
+              return (
+                <div
+                  key={originalIndex}
+                  className={isNewMessage ? "message-animate" : ""}
+                  style={{
+                    padding: 16,
+                    backgroundColor:
+                      message.role === "user" ? "#f5f5f5" : "#e3f2fd",
+                    marginBottom: 12,
+                    lineHeight: 1.6,
+                  }}
+                >
+                  <strong>{message.role === "user" ? "You: " : "Max: "}</strong>
+                  <span style={{ whiteSpace: "pre-wrap" }}>
+                    {message.content}
+                  </span>
+                </div>
+              );
+            })}
+            <style jsx>{`
+              @keyframes slideInFadeIn {
+                from {
+                  opacity: 0;
+                  transform: translateY(-20px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
+
+              .message-animate {
+                animation: slideInFadeIn 0.4s ease-out;
+              }
+            `}</style>
           </div>
         )}
       </section>

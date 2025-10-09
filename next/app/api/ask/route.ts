@@ -7,15 +7,15 @@ const openai = new OpenAI({
 
 export async function POST(request: Request) {
   try {
-    const { question } = await request.json();
+    const { messages } = await request.json();
 
-    if (!question) {
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
       return NextResponse.json(
-        { error: "Question is required" },
+        { error: "Messages array is required" },
         { status: 400 }
       );
     }
-    console.log("Question:", question);
+    console.log("Messages:", messages);
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
@@ -92,10 +92,7 @@ My dream:
 ###END OF INFORMATION ABOUT ME###
 `,
         },
-        {
-          role: "user",
-          content: question,
-        },
+        ...messages,
       ],
       temperature: 1.0,
       max_tokens: 500,
