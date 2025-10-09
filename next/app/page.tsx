@@ -54,7 +54,7 @@ export default function Home() {
         <p style={{ marginBottom: 24 }}>
           You can chat with my digital clone, ask me anything and my digital
           clone will try to respond as if we were chatting in person. Your
-          questions are anonymous, I won't be able to know, in any way, who
+          questions are anonymous, I won&apos;t be able to know, in any way, who
           asked them. Disclaimer: all replies are written automatically by my
           digital clone, not me. There may be deviations from my actual
           personality.
