@@ -153,7 +153,6 @@ export default function Home() {
                 cursor: isLoading ? "not-allowed" : "text",
                 transition: "opacity 0.3s ease, padding-right 0.3s ease",
                 boxSizing: "border-box",
-                border: "1px solid #ddd",
               }}
             />
             {isLoading && (
