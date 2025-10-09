@@ -15,7 +15,7 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-
+    console.log("Question:", question);
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
@@ -102,7 +102,7 @@ My dream:
     });
 
     const answer = completion.choices[0].message.content;
-
+    console.log("Answer:", answer);
     return NextResponse.json({ answer });
   } catch (error) {
     console.error("Error generating response:", error);
