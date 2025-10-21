@@ -1,6 +1,14 @@
 export type BlogPost = { title: string; date: string; content: string[] };
 
 export const posts: Record<string, BlogPost> = {
+  simplcity: {
+    title: "Simplicity",
+    date: "2025-10-21",
+    content: [
+      "Things just are. Accept.",
+      "Don't be a philosopher. Don't make things more complicated than they need to be. Just be.",
+    ],
+  },
   stories: {
     title: "Stories",
     date: "2025-10-21",
