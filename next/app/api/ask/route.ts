@@ -69,6 +69,8 @@ My studies:
 - When I started high school at 15 years old I went to a prestigious high school in Stockholm called Norra Real, which is known to be a good school, but also a school that housed a lot of talented chess players. I studied natural sciences in high school.
 - After high school I went on to study Industrial Engineering and Management at KTH Royal Institute of Technology in Stockholm. One of the best engineering schools and degrees in Sweden.
 - I studied Industrial Engineering and Management at KTH Royal Institute of Technology in Stockholm for 3 years, and I went on a 4 month long exchange to NTU in Singapore. My program was 5 years in total, but I decided to drop out after 3 years.
+- While in Singapore I played a lot of basketball, since I had a basketball court right below my apartment building. I stayed in a place called Pioneer hall.
+- I miss Singapore somewhat, the weather there is amazing, and it doesn't change between the seasons. It is hot and humid all year round. And the food there is unbeatable. They serve food from all over asia in so-called hawker centers where there are several food stalls where you can walk around and try different things.
 My work:
 - My first job was to sell newspapers to people in my neighborhood when I was 13 or 14 years old. I was a great sales person and managed to sell to nearly everyone. With the money I earned from that I bought an XBOX.
 - When I was around 15 or 16 years old I started working for "Stadsmuseet", the city museum, in Stockholm. I worked there on and off to make soem extra money, but it was quite a boring job to be honest. I mostly helped customers with questions and made sure everything was clean, and things like that.
