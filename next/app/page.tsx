@@ -109,14 +109,6 @@ export default function Home() {
       </section>
 
       <section style={{ textAlign: "left" }}>
-        <p style={{ marginBottom: 24 }}>
-          You can chat with my digital clone here, ask me anything and my
-          digital clone will try to respond as if we were chatting in person.
-          Your questions are fully anonymous. Disclaimer: all replies are
-          written automatically by my digital clone, not me. It is extremely
-          likely it will deviate from my actual personality.
-        </p>
-
         {conversationHistory.length > 0 && (
           <button
             onClick={clearHistory}
@@ -143,7 +135,11 @@ export default function Home() {
               type="text"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
-              placeholder={isLoading ? "Thinking..." : "Ask anything about me"}
+              placeholder={
+                isLoading
+                  ? "Thinking..."
+                  : "Ask my digital clone anything anonymously here"
+              }
               disabled={isLoading}
               style={{
                 width: "100%",
