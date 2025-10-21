@@ -23,7 +23,7 @@ export const posts: Record<string, BlogPost> = {
       "",
       "Now let's change the topic again, but still stay on the same line.",
       "I love coincidences.",
-      "Coincidences feels like things that break some pattern, they are unpredictable and unexpected in a way that adds spice to life.",
+      "Coincidences feel like things that break some pattern, they are unpredictable and unexpected in a way that adds spice to life.",
       "People who do things that they feel are uncomfortable also challenge the status quo of things, i.e. the pattern. Since I have noticed that doing things outside the comfort zone correlate with coincidences happening to you.",
       "I would argue that a good story cannot happen without this breaking of pattern.",
       "This means that challenging your comfort zone is intimately linked to creating a good story which is intimately linked with meaning (for me).",
