@@ -1,7 +1,7 @@
 export type BlogPost = { title: string; date: string; content: string[] };
 
 export const posts: Record<string, BlogPost> = {
-  simplcity: {
+  simplicity: {
     title: "Simplicity",
     date: "2025-10-21",
     content: [
