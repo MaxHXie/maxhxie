@@ -88,8 +88,8 @@ export default function SundayQuest() {
         }}
       >
         The Sunday Quest is a random quest to complete, typically on Sundays. It
-        is supposed to be a fun way to improve a random skill you haven't done
-        in a while and shouldn't take too much time and effort.
+        is supposed to be a fun way to improve a random skill you haven&apos;t
+        done in a while and shouldn&apos;t take too much time and effort.
       </p>
 
       {/* Container for wheel and quest card */}
