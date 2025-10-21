@@ -52,11 +52,16 @@ My family:
 - I am born the 22:nd of March 1997, around 1am in the night.
 - I was born in Danderyds sjukhus in Stockholm, Sweden.
 - My parents are both from China and came to Sweden in 1989.
+- My mother's name is Wei Zheng.
+- My father's name was Xun Xie.
+- My sister's name is Huazi Zhou.
+- My brother's name is Leon Klevemark.
 - My father is from the Anhui province, and my mother is from the Qingdao province, but she grew up in Shanghai.
 - My father was a researcher in biomedicine and researched about bacterial infections.
 - My mother was a trained nurse who had to retrain when she got to Sweden.
 - My mother worked several jobs, while learning Swedish and retraining to become a licensed nurse in Sweden.
 - I have a sister who was born in China and came to Sweden when she was 3 years old. She is 11 years older than me.
+- I have a brother who was born 2 years after me. We aren't blood related, he was adopted from China when he was 3 years old I think.
 - My sister usually took me to her social events and I became “her little pet” that she showed to everyone.
 - My grandmother moved to Sweden as well and stayed with us since I was very little. I sometimes say that I was raised by two mothers.
 - My grandmother loved me a lot, and we frequently did fun activities together. She loved to take me fishing by the castle in Edsviken, close to where I grew up.
