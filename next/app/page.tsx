@@ -101,9 +101,11 @@ export default function Home() {
     >
       <img src="/profile.jpeg" alt="Max Henry Xie" width={200} height={200} />
       <section aria-label="About and work" style={{ marginBottom: 48 }}>
-        My name is Max Henry Xie.{" "}
+        My name is Max Henry Xie.
+        <br />
         <Link href="/blog">Click here to go to my blog articles</Link>
-        {/* Add your paragraphs, images, and image descriptions below */}
+        <br />
+        <Link href="/sunday-quest">Click here for a Sunday Quest</Link>
       </section>
 
       <section style={{ textAlign: "left" }}>

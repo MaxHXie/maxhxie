@@ -1,0 +1,501 @@
+[
+  { "title": "Make an apple pie from scratch", "category": "practical" },
+  {
+    "title": "Meditate for 1 hour without disruption",
+    "category": "reflective"
+  },
+  {
+    "title": "Start a conversation with a stranger and talk for at least 5 minutes",
+    "category": "social"
+  },
+  {
+    "title": "Draw or paint an object you can see right now",
+    "category": "creative"
+  },
+  {
+    "title": "Write a short story of at least 1,000 words",
+    "category": "creative"
+  },
+  {
+    "title": "Walk or hike 10 km without using your phone",
+    "category": "physical"
+  },
+  {
+    "title": "Learn and perform a simple magic trick successfully three times in a row",
+    "category": "social"
+  },
+  {
+    "title": "Cook a meal using at least two ingredients you’ve never cooked with before",
+    "category": "practical"
+  },
+  {
+    "title": "Build a simple piece of furniture or decoration that can stand or hang",
+    "category": "practical"
+  },
+  {
+    "title": "Complete 100 push-ups throughout the day",
+    "category": "physical"
+  },
+  {
+    "title": "Read a chapter of a non-fiction book and write a 5-sentence summary",
+    "category": "mental"
+  },
+  {
+    "title": "Learn a new song on an instrument and perform it from memory",
+    "category": "creative"
+  },
+  {
+    "title": "Declutter and reorganize one entire room or workspace",
+    "category": "practical"
+  },
+  {
+    "title": "Learn 20 new words in a new language and write a short paragraph using all of them",
+    "category": "mental"
+  },
+  {
+    "title": "Sketch 10 different objects around you within 1 hour",
+    "category": "creative"
+  },
+  {
+    "title": "Write a letter to your future self and save it in a sealed envelope",
+    "category": "reflective"
+  },
+  {
+    "title": "Record a 2-minute video explaining something you’re passionate about",
+    "category": "social"
+  },
+  {
+    "title": "Plant a seed or plant and document how to care for it",
+    "category": "practical"
+  },
+  {
+    "title": "Practice mindful breathing for 30 minutes without distraction",
+    "category": "reflective"
+  },
+  {
+    "title": "Spend 2 hours helping another person with a task or errand",
+    "category": "social"
+  },
+  {
+    "title": "Take 20 photos highlighting patterns, colors, or symmetry",
+    "category": "creative"
+  },
+  {
+    "title": "Solve 5 logic or brain puzzles without external help",
+    "category": "mental"
+  },
+  {
+    "title": "Write down 10 personal goals and 3 specific actions for each",
+    "category": "reflective"
+  },
+  {
+    "title": "Have a conversation today where you focus only on listening",
+    "category": "social"
+  },
+  {
+    "title": "Create a simple app, automation, or script that performs a useful function",
+    "category": "creative"
+  },
+  {
+    "title": "Write 5 haikus throughout the day on different topics",
+    "category": "creative"
+  },
+  {
+    "title": "Clean and polish all your shoes or tools until they shine",
+    "category": "practical"
+  },
+  {
+    "title": "Learn to juggle and keep 3 objects in the air for at least 5 seconds",
+    "category": "physical"
+  },
+  {
+    "title": "Draw your favorite childhood memory as a single illustration",
+    "category": "creative"
+  },
+  {
+    "title": "Write a poem and read it aloud clearly to another person",
+    "category": "creative"
+  },
+  {
+    "title": "Avoid all screens and internet for 4 consecutive hours",
+    "category": "reflective"
+  },
+  {
+    "title": "Identify and correctly name 10 different plants or trees near you",
+    "category": "mental"
+  },
+  {
+    "title": "Create a 10-second stop-motion animation with household objects",
+    "category": "creative"
+  },
+  {
+    "title": "Write a list of 100 things you’re grateful for",
+    "category": "reflective"
+  },
+  {
+    "title": "Listen to a full album you’ve never heard before and write a short review",
+    "category": "creative"
+  },
+  {
+    "title": "Create a mind map of a topic you want to understand deeply",
+    "category": "mental"
+  },
+  {
+    "title": "Complete a 45-minute yoga or stretching session",
+    "category": "physical"
+  },
+  {
+    "title": "Draw a self-portrait without using an eraser",
+    "category": "creative"
+  },
+  {
+    "title": "Organize and clean your digital files or photos",
+    "category": "practical"
+  },
+  {
+    "title": "Build a small LEGO or cardboard model and take a photo of the result",
+    "category": "creative"
+  },
+  {
+    "title": "Try a new recipe using a cooking method you’ve never used before",
+    "category": "practical"
+  },
+  {
+    "title": "Prepare and deliver a 2-minute speech on a topic you care about",
+    "category": "social"
+  },
+  {
+    "title": "Read a scientific article and summarize its main finding in your own words",
+    "category": "mental"
+  },
+  {
+    "title": "Take 12 photos — one every 10 minutes — during a 2-hour walk",
+    "category": "creative"
+  },
+  {
+    "title": "Write and mail a handwritten letter to someone you appreciate",
+    "category": "social"
+  },
+  {
+    "title": "Draw your room or workspace entirely from memory",
+    "category": "creative"
+  },
+  {
+    "title": "Take a 3-minute cold shower without stopping early",
+    "category": "physical"
+  },
+  {
+    "title": "Create or update your personal monthly budget",
+    "category": "practical"
+  },
+  {
+    "title": "Make a vision board (digital or physical) representing your 1-year goals",
+    "category": "reflective"
+  },
+  {
+    "title": "Fold 5 different origami models following instructions",
+    "category": "creative"
+  },
+  {
+    "title": "Repair or improve one broken or neglected item at home",
+    "category": "practical"
+  },
+  {
+    "title": "Create and hide a time capsule with a list of 5 predictions",
+    "category": "reflective"
+  },
+  {
+    "title": "Learn 10 signs or Morse code signals and demonstrate them correctly",
+    "category": "mental"
+  },
+  {
+    "title": "Deliver a 5-minute talk on a random topic to a friend or camera",
+    "category": "social"
+  },
+  {
+    "title": "Create a playlist of 10 songs that express a single emotion or story",
+    "category": "creative"
+  },
+  {
+    "title": "Write a one-page personal manifesto of your values and goals",
+    "category": "reflective"
+  },
+  {
+    "title": "Sit in a public place or nature for 1 hour and write 10 observations",
+    "category": "reflective"
+  },
+  {
+    "title": "Design a logo for a fictional company or project",
+    "category": "creative"
+  },
+  {
+    "title": "Memorize a 10-line poem or quote and recite it aloud from memory",
+    "category": "mental"
+  },
+  {
+    "title": "Record yourself reading a short story dramatically",
+    "category": "creative"
+  },
+  {
+    "title": "Build and throw 5 paper airplanes, measuring which flies farthest",
+    "category": "creative"
+  },
+  {
+    "title": "Research a historical event and write a 200-word summary of it",
+    "category": "mental"
+  },
+  {
+    "title": "Write a short 2-person script and perform it aloud",
+    "category": "creative"
+  },
+  {
+    "title": "Draw or digitally design your ideal home layout",
+    "category": "creative"
+  },
+  {
+    "title": "Write down your top 10 life lessons learned so far",
+    "category": "reflective"
+  },
+  {
+    "title": "Read about one philosopher and summarize one of their ideas",
+    "category": "mental"
+  },
+  {
+    "title": "Write one page slowly and neatly to practice handwriting",
+    "category": "reflective"
+  },
+  {
+    "title": "Sketch a nearby building or landscape while outdoors",
+    "category": "creative"
+  },
+  {
+    "title": "Rearrange a room or desk setup for better comfort or flow",
+    "category": "practical"
+  },
+  {
+    "title": "Build a simple Rube Goldberg machine that performs one action",
+    "category": "creative"
+  },
+  {
+    "title": "Work for 3 focused hours using the Pomodoro method (6×25 min sessions)",
+    "category": "mental"
+  },
+  {
+    "title": "Design a personal logo or symbol that represents you",
+    "category": "creative"
+  },
+  {
+    "title": "Make a small 3D object using clay, paper, or digital modeling tools",
+    "category": "creative"
+  },
+  {
+    "title": "Read a short story aloud using expressive voice acting",
+    "category": "creative"
+  },
+  {
+    "title": "Learn 3 new bodyweight exercises and perform 3 sets of each correctly",
+    "category": "physical"
+  },
+  {
+    "title": "Write down 20 questions you’d like your future self to answer",
+    "category": "reflective"
+  },
+  {
+    "title": "Create a 3-day meal plan with balanced nutrition",
+    "category": "practical"
+  },
+  {
+    "title": "Handwrite a list of your 50 favorite memories",
+    "category": "reflective"
+  },
+  {
+    "title": "Learn 5 basic dance moves from an online tutorial",
+    "category": "physical"
+  },
+  { "title": "Paint a scene using only 3 colors", "category": "creative" },
+  {
+    "title": "Write and record a 30-second jingle or melody",
+    "category": "creative"
+  },
+  { "title": "Learn to whistle a tune accurately", "category": "physical" },
+  {
+    "title": "Clean out and organize your email inbox",
+    "category": "practical"
+  },
+  {
+    "title": "Spend 30 minutes journaling about your week",
+    "category": "reflective"
+  },
+  {
+    "title": "Practice 30 minutes of mindfulness walking outdoors",
+    "category": "reflective"
+  },
+  {
+    "title": "Try a 20-minute high-intensity interval workout",
+    "category": "physical"
+  },
+  {
+    "title": "Create a comic strip with at least 3 panels",
+    "category": "creative"
+  },
+  {
+    "title": "List 10 personal strengths and one example of each",
+    "category": "reflective"
+  },
+  {
+    "title": "Try to draw a map of your city or neighborhood from memory",
+    "category": "mental"
+  },
+  {
+    "title": "Build a small paper bridge that can hold a cup",
+    "category": "creative"
+  },
+  {
+    "title": "Read 10 pages of a book in a foreign language",
+    "category": "mental"
+  },
+  {
+    "title": "Make a 1-minute silent film using your phone",
+    "category": "creative"
+  },
+  {
+    "title": "Create a digital folder of your best personal photos",
+    "category": "practical"
+  },
+  {
+    "title": "Stretch for 30 minutes focusing on flexibility",
+    "category": "physical"
+  },
+  { "title": "Learn and perform a simple card trick", "category": "social" },
+  {
+    "title": "Write 5 short affirmations you can repeat daily",
+    "category": "reflective"
+  },
+  {
+    "title": "Make a mini sculpture using only household items",
+    "category": "creative"
+  },
+  {
+    "title": "Write and answer 10 'What if...' creative questions",
+    "category": "mental"
+  },
+  {
+    "title": "Bake bread or a similar baked item from scratch",
+    "category": "practical"
+  },
+  {
+    "title": "Practice standing on one leg for 1 minute per side",
+    "category": "physical"
+  },
+  {
+    "title": "Create a playlist that tells a story from start to end",
+    "category": "creative"
+  },
+  {
+    "title": "Spend 1 hour reading about a culture you know little about",
+    "category": "mental"
+  },
+  {
+    "title": "Write a thank-you note to someone from your past",
+    "category": "social"
+  },
+  {
+    "title": "Make a homemade smoothie or juice blend",
+    "category": "practical"
+  },
+  {
+    "title": "Build a domino or marble run and record it working",
+    "category": "creative"
+  },
+  {
+    "title": "Draw or paint your mood right now as abstract shapes",
+    "category": "creative"
+  },
+  {
+    "title": "Plan an imaginary trip with full itinerary and budget",
+    "category": "mental"
+  },
+  {
+    "title": "Read 3 articles from a topic you usually ignore",
+    "category": "mental"
+  },
+  {
+    "title": "Do 50 squats, 50 sit-ups, and 50 jumping jacks",
+    "category": "physical"
+  },
+  {
+    "title": "Write 10 sentences using only positive language",
+    "category": "reflective"
+  },
+  { "title": "Sketch 5 faces with different emotions", "category": "creative" },
+  {
+    "title": "Learn and perform a tongue twister perfectly 10 times",
+    "category": "social"
+  },
+  { "title": "Design a bookmark and decorate it", "category": "creative" },
+  {
+    "title": "Draw a floor plan of your living space",
+    "category": "practical"
+  },
+  {
+    "title": "Spend 1 hour doing nothing but observing your surroundings",
+    "category": "reflective"
+  },
+  {
+    "title": "Write a short fictional diary entry from a historical figure",
+    "category": "creative"
+  },
+  {
+    "title": "Fold 10 paper cranes or similar origami models",
+    "category": "creative"
+  },
+  {
+    "title": "Research and list 10 small habits that improve daily life",
+    "category": "mental"
+  },
+  {
+    "title": "Write a six-word memoir about your life",
+    "category": "reflective"
+  },
+  {
+    "title": "Try to balance a pencil on your finger for 30 seconds",
+    "category": "physical"
+  },
+  {
+    "title": "Record 10 seconds of ambient sound and describe it in writing",
+    "category": "creative"
+  },
+  {
+    "title": "Clean your workspace completely and take a photo before and after",
+    "category": "practical"
+  },
+  {
+    "title": "Read one Wikipedia page deeply and summarize what you learned",
+    "category": "mental"
+  },
+  {
+    "title": "Write a rhyming poem of at least 8 lines",
+    "category": "creative"
+  },
+  {
+    "title": "Learn 3 breathing techniques and practice each for 5 minutes",
+    "category": "reflective"
+  },
+  {
+    "title": "Write a 5-item bucket list with specific actions",
+    "category": "reflective"
+  },
+  {
+    "title": "Do 10 minutes of balance training (e.g., stand on one foot, wobble board)",
+    "category": "physical"
+  },
+  {
+    "title": "Create a mini-story in 10 sentences or less",
+    "category": "creative"
+  },
+  { "title": "Sketch your hand in 3 different poses", "category": "creative" },
+  {
+    "title": "Write down your morning routine and improve one step",
+    "category": "practical"
+  }
+]
