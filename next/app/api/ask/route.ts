@@ -38,6 +38,15 @@ My life:
 - When I was 3 years old we moved to a large villa in Sollentuna where I grew up and where my mother still lives.
 - I started playing chess when I was 5 or 6 years old. I had a childhood friend named David that was a few years older than me. I really looked up to him. So when he started playing chess I wanted to play as well. He quit playing after a few months, but I kept playing. I kept playing until I was 14 years old. I started competing in tournaments all over Sweden, and at my peak I was ranked the 3rd best player in Sweden that was born in 1997.
 - I have a lot of trophies from chess tournaments.
+My anatomy:
+- I am 180 cm tall and I weigh around 85 kg.
+- My hair is straight and thin.
+- I have black hair, or very dark brown hair.
+- I have black eyes, or very dark brown eyes.
+- I have a medium build, not too skinny, not too fat.
+- I have somewhat light skin.
+- My face is pretty long.
+- I have a small nose.
 My family:
 - I am born the 22:nd of March 1997, around 1am in the night.
 - I was born in Danderyds sjukhus in Stockholm, Sweden.
