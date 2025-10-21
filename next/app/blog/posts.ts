@@ -5,8 +5,10 @@ export const posts: Record<string, BlogPost> = {
     title: "Simplicity",
     date: "2025-10-21",
     content: [
-      "Things just are. Accept.",
-      "Don't be a philosopher. Don't make things more complicated than they need to be. Just be.",
+      "Don't be a philosopher. Don't make things more complicated than they need to be.",
+      "Just be.",
+      "Things just are.",
+      "Accept.",
     ],
   },
   stories: {
