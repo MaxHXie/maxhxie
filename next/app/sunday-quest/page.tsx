@@ -13,6 +13,7 @@ export default function SundayQuest() {
   const [isSpinning, setIsSpinning] = useState(false);
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
   const [showQuest, setShowQuest] = useState(false);
+  const [hideWheel, setHideWheel] = useState(false);
 
   const handleSpin = () => {
     if (isSpinning) return;
@@ -20,6 +21,7 @@ export default function SundayQuest() {
     setIsSpinning(true);
     setShowQuest(false);
     setSelectedQuest(null);
+    setHideWheel(false);
 
     // Simulate wheel spinning for 3 seconds
     setTimeout(() => {
@@ -28,10 +30,13 @@ export default function SundayQuest() {
       setSelectedQuest(sundayQuests[randomIndex]);
       setIsSpinning(false);
 
-      // Show quest with animation after a brief delay
+      // Hide wheel with animation
+      setHideWheel(true);
+
+      // Show quest with animation after wheel fade out
       setTimeout(() => {
         setShowQuest(true);
-      }, 200);
+      }, 500);
     }, 3000);
   };
 
@@ -54,27 +59,12 @@ export default function SundayQuest() {
         margin: "0 auto",
         padding: 32,
         textAlign: "center",
-        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <Link
-        href="/"
-        style={{
-          position: "absolute",
-          top: 24,
-          left: 24,
-          fontSize: 16,
-          textDecoration: "none",
-          color: "#333",
-        }}
-      >
-        ← Back to Home
-      </Link>
-
       <h1
         style={{
           fontSize: 48,
@@ -102,65 +92,125 @@ export default function SundayQuest() {
         in a while and shouldn't take too much time and effort.
       </p>
 
-      {/* Spinning Wheel */}
+      {/* Container for wheel and quest card */}
       <div
         style={{
           position: "relative",
           marginBottom: 48,
+          minHeight: 400,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "100%",
         }}
       >
-        <div
-          className={isSpinning ? "wheel-spinning" : ""}
-          style={{
-            width: 300,
-            height: 300,
-            borderRadius: "50%",
-            background: `conic-gradient(
-              from 0deg,
-              #FF6B6B 0deg 60deg,
-              #4ECDC4 60deg 120deg,
-              #45B7D1 120deg 180deg,
-              #FFA07A 180deg 240deg,
-              #98D8C8 240deg 300deg,
-              #F7DC6F 300deg 360deg
-            )`,
-            boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
-            border: "12px solid #fff",
-            position: "relative",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          {/* Center circle */}
+        {/* Spinning Wheel */}
+        {!showQuest && (
           <div
+            className={hideWheel ? "wheel-hide" : ""}
             style={{
-              width: 160,
-              height: 160,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 80,
+              position: "relative",
+              opacity: hideWheel ? 0 : 1,
+              transform: hideWheel ? "scale(0.8)" : "scale(1)",
+              transition: "opacity 0.5s ease, transform 0.5s ease",
             }}
           >
-            ✨
-          </div>
-        </div>
+            <div
+              className={isSpinning ? "wheel-spinning" : ""}
+              style={{
+                width: 300,
+                height: 300,
+                borderRadius: "50%",
+                background: `conic-gradient(
+                  from 0deg,
+                  #FF6B6B 0deg 60deg,
+                  #4ECDC4 60deg 120deg,
+                  #45B7D1 120deg 180deg,
+                  #FFA07A 180deg 240deg,
+                  #98D8C8 240deg 300deg,
+                  #F7DC6F 300deg 360deg
+                )`,
+                boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
+                border: "12px solid #fff",
+                position: "relative",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              {/* Center circle */}
+              <div
+                style={{
+                  width: 160,
+                  height: 160,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: 80,
+                }}
+              >
+                ✨
+              </div>
+            </div>
 
-        {/* Pointer */}
-        <div
-          style={{
-            position: "absolute",
-            top: -20,
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: 0,
-            height: 0,
-            borderLeft: "20px solid transparent",
-            borderRight: "20px solid transparent",
-            borderTop: "30px solid #333",
-          }}
-        />
+            {/* Pointer */}
+            <div
+              style={{
+                position: "absolute",
+                top: -20,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 0,
+                height: 0,
+                borderLeft: "20px solid transparent",
+                borderRight: "20px solid transparent",
+                borderTop: "30px solid #333",
+              }}
+            />
+          </div>
+        )}
+
+        {/* Quest Display */}
+        {selectedQuest && showQuest && (
+          <div
+            className="quest-appear"
+            style={{
+              padding: 32,
+              backgroundColor: "#fff",
+              borderRadius: 16,
+              boxShadow: "0 10px 40px rgba(0,0,0,0.1)",
+              maxWidth: 600,
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                display: "inline-block",
+                padding: "8px 20px",
+                borderRadius: 20,
+                backgroundColor: getCategoryColor(selectedQuest.category),
+                color: "white",
+                fontSize: 14,
+                fontWeight: "bold",
+                textTransform: "uppercase",
+                letterSpacing: 1,
+              }}
+            >
+              {selectedQuest.category}
+            </div>
+
+            <h2
+              style={{
+                fontSize: 28,
+                lineHeight: 1.5,
+                color: "#333",
+                marginBottom: 32,
+              }}
+            >
+              {selectedQuest.title}
+            </h2>
+          </div>
+        )}
       </div>
 
       {/* Button */}
@@ -204,52 +254,6 @@ export default function SundayQuest() {
         </p>
       )}
 
-      {/* Quest Display */}
-      {selectedQuest && (
-        <div
-          className={showQuest ? "quest-appear" : ""}
-          style={{
-            marginTop: 32,
-            padding: 32,
-            backgroundColor: "#fff",
-            borderRadius: 16,
-            boxShadow: "0 10px 40px rgba(0,0,0,0.1)",
-            maxWidth: 600,
-            width: "100%",
-            opacity: showQuest ? 1 : 0,
-            transform: showQuest ? "scale(1)" : "scale(0.8)",
-            transition: "all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)",
-          }}
-        >
-          <div
-            style={{
-              display: "inline-block",
-              padding: "8px 20px",
-              borderRadius: 20,
-              backgroundColor: getCategoryColor(selectedQuest.category),
-              color: "white",
-              fontSize: 14,
-              fontWeight: "bold",
-              textTransform: "uppercase",
-              letterSpacing: 1,
-            }}
-          >
-            {selectedQuest.category}
-          </div>
-
-          <h2
-            style={{
-              fontSize: 28,
-              lineHeight: 1.5,
-              color: "#333",
-              marginBottom: 32,
-            }}
-          >
-            {selectedQuest.title}
-          </h2>
-        </div>
-      )}
-
       <style jsx>{`
         @keyframes spin {
           from {
@@ -264,19 +268,34 @@ export default function SundayQuest() {
           animation: spin 3s cubic-bezier(0.17, 0.67, 0.12, 0.99);
         }
 
-        @keyframes questAppear {
+        @keyframes wheelHide {
           from {
+            opacity: 1;
+            transform: scale(1);
+          }
+          to {
             opacity: 0;
             transform: scale(0.8);
           }
+        }
+
+        .wheel-hide {
+          animation: wheelHide 0.5s ease forwards;
+        }
+
+        @keyframes questAppear {
+          from {
+            opacity: 0;
+            transform: scale(0.8) translateY(20px);
+          }
           to {
             opacity: 1;
-            transform: scale(1);
+            transform: scale(1) translateY(0);
           }
         }
 
         .quest-appear {
-          animation: questAppear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+          animation: questAppear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
       `}</style>
     </main>
