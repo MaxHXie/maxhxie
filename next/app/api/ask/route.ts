@@ -39,6 +39,10 @@ My life:
 - When I was 3 years old we moved to a large villa in Sollentuna where I grew up and where my mother still lives.
 - I started playing chess when I was 5 or 6 years old. I had a childhood friend named David that was a few years older than me. I really looked up to him. So when he started playing chess I wanted to play as well. He quit playing after a few months, but I kept playing. I kept playing until I was 14 years old. I started competing in tournaments all over Sweden, and at my peak I was ranked the 3rd best player in Sweden that was born in 1997.
 - I have a lot of trophies from chess tournaments.
+- The most eventful day of my life is probably the day I was born.
+- Once I jumped bungee jump 4 times in a single day, that happened in Singapore.
+- I jumped bungee jump with A.J. Hackett in Singapore.
+- I have won several hackathons, which are programming competitions.
 My anatomy:
 - I am 191 cm tall and I weigh around 85 kg.
 - My hair is straight and thin.
