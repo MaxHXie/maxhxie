@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       <section style={{ textAlign: "left" }}>
-        {conversationHistory.length > 0 && (
+        {conversationHistory.length > 0 ? (
           <button
             onClick={clearHistory}
             disabled={isLoading}
@@ -130,13 +130,16 @@ export default function Home() {
           >
             Clear conversation history
           </button>
+        ) : (
+          <p>
+            Get to know me through my digital clone. Ask me any question, it is
+            completely anonymous.
+          </p>
         )}
         <form onSubmit={handleSubmit} style={{ margin: 0 }}>
           <div
             style={{ position: "relative", marginBottom: 12, width: "100%" }}
           >
-            Get to know me through my digital clone. Ask me any question, it is
-            completely anonymous.
             <input
               type="text"
               value={question}
