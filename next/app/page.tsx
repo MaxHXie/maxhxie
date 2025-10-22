@@ -135,6 +135,8 @@ export default function Home() {
           <div
             style={{ position: "relative", marginBottom: 12, width: "100%" }}
           >
+            Get to know me through my digital clone. Ask me any question, it is
+            completely anonymous.
             <input
               type="text"
               value={question}
@@ -142,7 +144,7 @@ export default function Home() {
               placeholder={
                 isLoading
                   ? "Thinking..."
-                  : "Ask my digital clone anything anonymously here"
+                  : "Ask my digital clone anything anonymously here..."
               }
               disabled={isLoading}
               style={{
