@@ -166,15 +166,6 @@ export default function ExposureChallenges() {
 
       {/* Full List of Challenges */}
       <div>
-        <h2
-          style={{
-            fontSize: 28,
-            marginBottom: 24,
-            color: "#333",
-          }}
-        >
-          All Challenges
-        </h2>
         <ol
           style={{
             lineHeight: 2,
