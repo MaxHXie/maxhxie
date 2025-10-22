@@ -103,7 +103,7 @@ export default function Home() {
       <section aria-label="About and work" style={{ marginBottom: 48 }}>
         My name is Max Henry Xie.
         <br />
-        <Link href="/blog">Click here to go to my blog articles</Link>
+        <Link href="/blog">Click here to go to my blog posts</Link>
         <br />
         <Link href="/sunday-quest">Click here for a Sunday Quest</Link>
         <br />
