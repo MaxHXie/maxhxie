@@ -81,8 +81,8 @@ export default function ExposureChallenges() {
           }}
         >
           Below are 100 social challenges. It starts easy and gets progressively
-          harder. Everybody has a limit, the edge of their comfort zone. Read
-          the challenges and note the number of the challenge that is the
+          harder. Everybody has a limit, i.e. the edge of their comfort zone.
+          Read the challenges and note the number of the challenge that is the
           closest to your limit. Enter that number here to get a suitable random
           challenge to improve your limit.
         </p>
