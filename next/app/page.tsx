@@ -106,6 +106,10 @@ export default function Home() {
         <Link href="/blog">Click here to go to my blog articles</Link>
         <br />
         <Link href="/sunday-quest">Click here for a Sunday Quest</Link>
+        <br />
+        <Link href="/exposure-challenges">
+          Click here for Exposure Challenges
+        </Link>
       </section>
 
       <section style={{ textAlign: "left" }}>
