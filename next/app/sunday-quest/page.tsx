@@ -65,20 +65,6 @@ export default function SundayQuest() {
         alignItems: "center",
       }}
     >
-      <h1
-        style={{
-          fontSize: 48,
-          marginBottom: 16,
-          fontWeight: "bold",
-          background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text",
-        }}
-      >
-        The Sunday Quest
-      </h1>
-
       <p
         style={{
           fontSize: 18,

@@ -54,11 +54,9 @@ export default function ExposureChallenges() {
       {/* Input Section */}
       <div
         style={{
-          backgroundColor: "#f8f9fa",
           padding: 32,
           borderRadius: 12,
           marginBottom: 48,
-          boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
         }}
       >
         <h2
