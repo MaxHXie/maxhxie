@@ -1,6 +1,19 @@
 export type BlogPost = { title: string; date: string; content: string[] };
 
 export const posts: Record<string, BlogPost> = {
+  "the-art-of-doing-a-thing": {
+    title: "The art of doing a thing",
+    date: "2025-10-22",
+    content: [
+      "To do a thing, you need 3 things.\n1. Wanting to do it.\n2. Allowing yourself to do it, based on your bravery and ethics.\n3. Knowing it is a thing that can be done.",
+      "Wanting to do something is mostly innate. So is having the ethics to allow yourself to do something. To do more of the things we want to do, the easiest way is to either work on our bravery or find out what things can be done. This post will focus on bravery.",
+      "We will start with bravery. No human has infinite bravery, because infinite bravery is not feasible. When we do things we aren't brave enough to do we feel anxiety. Anxiety is your body's way to try to stop you from doing that thing, to keep you alive, and it is mostly right. But in modern society, in the absence of real threats, we learn to develop anxieties for things that just aren't that dangerous.",
+      "There are different domains of anxiety, for example:\n1. Social anxiety\n2. Performance anxiety\n3. Specific phobias\nEach anxiety domain is its own thing and is separate from other domains, and needs each to be solved one by one. Each anxiety domain is like a skill tree that starts with things that are easy and automatic to us and gets harder as the skill tree progresses. A good idea is to understand where your limit is, i.e. the edge of your comfort zone is, in each of the relevant anxiety domains to understand what you can do to improve your limit.",
+      "Taking on challenges that are not accessible yet in the skill tree is brave, but not necessary and generally is something that I would refrain from doing. Why? The reason is because it could be too much to take on in one go and it could backfire. It is much better to do the things that are right on the edge of your comfort zone, i.e. things that you know that you can do, but are noe overly anxious to do. Therefore, I argue a disciplined routine of doing tasks that constantly makes you a little bit anxious is the best way to progress.",
+      "Each person's skill tree is roughly similar but at the same time, different and individually specific. Something that is very easy for one person may be very difficult for someone else. For those individual obstacles where self-perception is the issue, reflection is needed to get past them. Some examples could be:\n1. Don't want to be a burden\n2. Don't want to be seen as dumb (insecurity about intelligence)\n3. Sensitivity to public perception",
+      "You should be able to detect if you have such an individual obstacle quite fast by noticing what things are harder for you to do than the norm. If your individual obstacle of sensitivity to public perception is especially high you should question yourself why that may be the case, and try to derive to a point of what a more balanced sensitivity could look like. Once that obstacle is processed you can progress further.",
+    ],
+  },
   simplicity: {
     title: "Simplicity",
     date: "2025-10-21",
@@ -46,19 +59,6 @@ export const posts: Record<string, BlogPost> = {
     content: [
       "This is a placeholder post. Replace this content with your writing.",
       "You can add multiple paragraphs by extending the content array.",
-    ],
-  },
-  "the-art-of-doing-a-thing": {
-    title: "The art of doing a thing",
-    date: "2025-10-22",
-    content: [
-      "To do a thing, you need 3 things.\n1. Wanting to do it.\n2. Allowing yourself to do it, based on your bravery and ethics.\n3. Knowing it is a thing that can be done.",
-      "Wanting to do something is mostly innate. So is having the ethics to allow yourself to do something. To do more of the things we want to do, the easiest way is to either work on our bravery or find out what things can be done. This post will focus on bravery.",
-      "We will start with bravery. No human has infinite bravery, because infinite bravery is not feasible. When we do things we aren't brave enough to do we feel anxiety. Anxiety is your body's way to try to stop you from doing that thing, to keep you alive, and it is mostly right. But in modern society, in the absence of real threats, we learn to develop anxieties for things that just aren't that dangerous.",
-      "There are different domains of anxiety, for example:\n1. Social anxiety\n2. Performance anxiety\n3. Specific phobias\nEach anxiety domain is its own thing and is separate from other domains, and needs each to be solved one by one. Each anxiety domain is like a skill tree that starts with things that are easy and automatic to us and gets harder as the skill tree progresses. A good idea is to understand where your limit is, i.e. the edge of your comfort zone is, in each of the relevant anxiety domains to understand what you can do to improve your limit.",
-      "Taking on challenges that are not accessible yet in the skill tree is brave, but not necessary and generally is something that I would refrain from doing. Why? The reason is because it could be too much to take on in one go and it could backfire. It is much better to do the things that are right on the edge of your comfort zone, i.e. things that you know that you can do, but are noe overly anxious to do. Therefore, I argue a disciplined routine of doing tasks that constantly makes you a little bit anxious is the best way to progress.",
-      "Each person's skill tree is roughly similar but at the same time, different and individually specific. Something that is very easy for one person may be very difficult for someone else. For those individual obstacles where self-perception is the issue, reflection is needed to get past them. Some examples could be:\n1. Don't want to be a burden\n2. Don't want to be seen as dumb (insecurity about intelligence)\n3. Sensitivity to public perception",
-      "You should be able to detect if you have such an individual obstacle quite fast by noticing what things are harder for you to do than the norm. If your individual obstacle of sensitivity to public perception is especially high you should question yourself why that may be the case, and try to derive to a point of what a more balanced sensitivity could look like. Once that obstacle is processed you can progress further.",
     ],
   },
 };
