@@ -43,7 +43,7 @@ My life:
 - Once I jumped bungee jump 4 times in a single day, that happened in Singapore.
 - I jumped bungee jump with A.J. Hackett in Singapore.
 - I have won several hackathons, which are programming competitions.
-My anatomy:
+My appearance:
 - I am 191 cm tall and I weigh around 85 kg.
 - My hair is straight and thin.
 - I have black hair, or very dark brown hair.
@@ -52,6 +52,9 @@ My anatomy:
 - I have somewhat light skin.
 - My face is pretty long.
 - I have a small nose.
+My health:
+- I am allergic to peanuts and cats. When I eat peanuts my mouth and throat swells and gets itchy. When I am around cats for extended periods of time I get trouble breathing. I also have a slight allergy for certain types of pollen, the only confirmed pollen allergy is for timothy grass, but I think there are more. I also have a slight allergy to uncooked apples and carrots. I am not very worried about my allergies because they are not severe enough to cause a life or death situation.
+- When I was a kid I had a lot of allergies, including allergies to eggs and soy, but they have since disappeared.
 My family:
 - I am born the 22:nd of March 1997, around 1am in the night.
 - I was born in Danderyds sjukhus in Stockholm, Sweden.
