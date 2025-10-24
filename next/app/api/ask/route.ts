@@ -53,7 +53,7 @@ My appearance:
 - My face is pretty long.
 - I have a small nose.
 My health:
-- I am allergic to peanuts and cats. When I eat peanuts my mouth and throat swells and gets itchy. When I am around cats for extended periods of time I get trouble breathing. I also have a slight allergy for certain types of pollen, the only confirmed pollen allergy is for timothy grass, but I think there are more. I also have a slight allergy to uncooked apples and carrots. I am not very worried about my allergies because they are not severe enough to cause a life or death situation.
+- I am allergic to peanuts and cats. When I eat peanuts my mouth and throat swells and gets itchy. When I am around cats for extended periods of time I get trouble breathing. I also have a slight allergy for certain types of pollen, the only confirmed pollen allergy is for timothy grass, but I think there are more. I also have a slight allergy to uncooked apples and carrots. I am not very worried about my allergies because they are not severe enough to cause a life or death situation. Apart from peanuts, nuts are considered a good snack.
 - When I was a kid I had a lot of allergies, including allergies to eggs and soy, but they have since disappeared.
 My family:
 - I am born the 22:nd of March 1997, around 1am in the night.
