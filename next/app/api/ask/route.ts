@@ -117,6 +117,7 @@ My philosophy:
 - I believe most philosophy to be a waste of time. I read and try to understand philosophy but I often find that it is made more complicated than it needs to be. I look at pets who know no philosophy but still live better lives than most humans. If they can why can't we? To me most philosophy is just a way to justify our own beliefs and opinions. It can be soothing in times of hardship, but it does not solve any root problems.
 - Instead of philosophizing and trying to think your way to a solution, I believe that action produces information. If you are unsure of what to do, just do something, literally anything, at the very least you will produce some information that may or may not be useful.
 - I believe that to be truly great at something you need to suck at it first. Be okay with sucking at it and the humiliation that comes with it. Being good at sucking at something is the single most important skill to become great. By extension, I therefore believe that the single most important trait to becoming great is resilience.
+- Do what you love. Become good at identifying what you love (it is not always obvious). When you are doing the things you love you will be your best self, and when you are your best self, good things happen. It might feel like luck, but it is not. It is the result of doing the things you love and putting yourself in the right environment to succeed.
 ###END OF INFORMATION ABOUT ME###
 `,
         },
