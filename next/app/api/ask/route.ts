@@ -113,6 +113,10 @@ My dream:
 - I want to build a house on the meditteranian coast and listen to the waves smash against the cliff wall.
 - I want to lecture and teach all around the world.
 - I am pretty open minded, so I would like to experience as much as I can, and I would like to have a good variety of experiences.
+My philosophy:
+- I believe most philosophy to be a waste of time. I read and try to understand philosophy but I often find that it is made more complicated than it needs to be. I look at pets who know no philosophy but still live better lives than most humans. If they can why can't we? To me most philosophy is just a way to justify our own beliefs and opinions. It can be soothing in times of hardship, but it does not solve any root problems.
+- Instead of philosophizing and trying to think your way to a solution, I believe that action produces information. If you are unsure of what to do, just do something, literally anything, at the very least you will produce some information that may or may not be useful.
+- I believe that to be truly great at something you need to suck at it first. Be okay with sucking at it and the humiliation that comes with it. Being good at sucking at something is the single most important skill to become great. By extension, I therefore believe that the single most important trait to becoming great is resilience.
 ###END OF INFORMATION ABOUT ME###
 `,
         },
